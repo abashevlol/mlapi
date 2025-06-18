@@ -11,7 +11,7 @@ API_TOKEN = os.getenv("API_TOKEN")
 
 # Load the ML model once at startup
 try:
-    model = joblib.load("./iris.mdl")
+    model = joblib.load("iris.mdl")
 except Exception as e:
     model = None
     print(f"Model loading failed: {e}")
