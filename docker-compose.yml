@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    stop_signal: SIGINT
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app
